@@ -3,21 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2x2 CSS Grid Example</title>
+  <title>2x2 CSS Grid Fixed Pixels</title>
   <style>
-    /* Grid Container */
     .holder {
-      display: grid; /* Activate CSS Grid */
+      display: grid; /* Grid container */
       width: 200px;
       height: 200px;
-      grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
-      grid-template-rows: repeat(2, 1fr);    /* 2 equal rows */
-      gap: 5px; /* Optional spacing between items */
-      border: 2px solid #333;
+      grid-template-columns: repeat(2, 100px); /* Fixed 100px columns */
+      grid-template-rows: repeat(2, 100px);    /* Fixed 100px rows */
+      gap: 0; /* No gap to match exact size */
       margin: 50px auto;
     }
 
-    /* Grid Items */
     .item {
       display: flex;
       align-items: center;
@@ -27,11 +24,10 @@
       color: white;
     }
 
-    /* Different colors for visual clarity */
-    .item:nth-child(1) { background-color: #e74c3c; } /* Red */
-    .item:nth-child(2) { background-color: #3498db; } /* Blue */
-    .item:nth-child(3) { background-color: #2ecc71; } /* Green */
-    .item:nth-child(4) { background-color: #f1c40f; } /* Yellow */
+    .item:nth-child(1) { background-color: #e74c3c; }
+    .item:nth-child(2) { background-color: #3498db; }
+    .item:nth-child(3) { background-color: #2ecc71; }
+    .item:nth-child(4) { background-color: #f1c40f; }
   </style>
 </head>
 <body>
@@ -45,4 +41,4 @@
 
 </body>
 </html>
- 
+
